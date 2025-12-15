@@ -19,7 +19,7 @@ namespace EFCore.Sharding
     internal class ShardingMigration : MigrationsModelDiffer
     {
 
-#if NET9_0
+#if NET10_0 || NET9_0
         public ShardingMigration(IRelationalTypeMappingSource typeMappingSource, IMigrationsAnnotationProvider migrationsAnnotationProvider,IRelationalAnnotationProvider relationalAnnotationProvider, IRowIdentityMapFactory rowIdentityMapFactory, CommandBatchPreparerDependencies commandBatchPreparerDependencies) : base(typeMappingSource, migrationsAnnotationProvider, relationalAnnotationProvider,rowIdentityMapFactory, commandBatchPreparerDependencies)
         {
         }

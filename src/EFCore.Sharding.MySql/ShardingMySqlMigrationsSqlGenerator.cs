@@ -12,7 +12,7 @@ namespace EFCore.Sharding.MySql
 {
     internal class ShardingMySqlMigrationsSqlGenerator : MySqlMigrationsSqlGenerator
     {
-#if NET9_0 || NET8_0 || NET7_0
+#if   NET10_0 ||  NET9_0 || NET8_0 || NET7_0
         public ShardingMySqlMigrationsSqlGenerator(MigrationsSqlGeneratorDependencies dependencies, ICommandBatchPreparer commandBatchPreparer, IMySqlOptions options) : base(dependencies, commandBatchPreparer, options)
         {
         }
